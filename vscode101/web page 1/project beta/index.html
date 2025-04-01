@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Beta</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: 10% 80% 10%;
+            grid-template-columns: 25% 50% 25%;
+            height: 100vh;
+            margin: 0;
+        }
+        .top {
+            grid-column: 1 / span 3;
+        }
+        .main {
+            grid-column: 1 / span 3;
+        }
+        .bottom {
+            grid-column: 1 / span 3;
+        }
+        .left {
+            grid-row: 2;
+        }
+        .center {
+            grid-row: 2;
+        }
+        .right {
+            grid-row: 2;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: black 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <iframe class="top" name="top" src="top_frame.html"></iframe>
+    <iframe class="left" name="left" src="left_frame.html"></iframe>
+    <iframe class="right" name="right" src="right_frame.html"></iframe>
+</body>
+</html>
